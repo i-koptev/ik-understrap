@@ -41,3 +41,11 @@ git branch -M master
 git remote add origin https://github.com/i-koptev/ik-understrap.git
 git push -u origin master
 ```
+
+## Создание необходимых файлов темы
+
+Создаются два файла, необходимых для того, чтобы директория распознавалась Вордпресс как тема:
+```shell
+style.css
+index.php
+```
