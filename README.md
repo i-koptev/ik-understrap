@@ -53,11 +53,11 @@ index.php
 
 Копируются файлы:
 
-.editorconfig - настройки редактора ( для Шторма похоже избыточны )
-.browserslistrc - настройки для Автопрефиксера
-.gitignore
-.jscsrc - настройки линтера
-.jshintignore - игнор для линтера
-package.json - система сборки SASS
+- .editorconfig - настройки редактора ( для Шторма похоже избыточны )
+- .browserslistrc - настройки для Автопрефиксера
+- .gitignore
+- .jscsrc - настройки линтера
+- .jshintignore - игнор для линтера
+- package.json - система сборки SASS
 
 
