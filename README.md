@@ -63,3 +63,17 @@ index.php
 Копируется полностью директория /src
 Проходя по package.json удаляются всё, что связано с Bootstrap 4 - и из файла и из директории.
 
+Автогенерируемые директории добавляются в .gitignore:
+- /src/sass/assets
+- /js
+- /css
+
+## Редактируется файл /scr/build/browser-sync.config.js
+
+```shell
+module.exports = {
+	"proxy": "ikunderstrap/",
+	"notify": false,
+	"files": ["./css/*.min.css", "./js/*.min.js", "./**/*.php"]
+};
+```
