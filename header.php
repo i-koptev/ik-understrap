@@ -12,6 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 //$bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
 //$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
+$navbar_type  = 'offcanvas';
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -22,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_head(); ?>
 </head>
 
-<!--<body --><?php //body_class(); ?><!-- --><?php //understrap_body_attributes(); ?><!-->-->
+<body <?php  //body_class(); ?> <?php //understrap_body_attributes(); ?>>
 <body <?php body_class(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
@@ -30,8 +31,11 @@ defined( 'ABSPATH' ) || exit;
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-HEADER!
-<!--		--><?php //get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+		<a class="skip-link sr-only sr-only-focusable"
+		   href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+				<?php get_template_part( 'global-templates/navbar', $navbar_type ); ?>
+
+
+
 
 	</header><!-- #wrapper-navbar end -->
