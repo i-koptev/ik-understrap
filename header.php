@@ -11,8 +11,8 @@
 defined( 'ABSPATH' ) || exit;
 
 //$bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
-//$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
-$navbar_type  = 'offcanvas';
+$navbar_type       = get_theme_mod( 'ikunderstrap_navbar_type', 'collapse' );
+//var_dump($navbar_type);die();
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

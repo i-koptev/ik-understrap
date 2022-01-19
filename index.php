@@ -16,8 +16,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-//$container = get_theme_mod( 'understrap_container_type' );
-$container = 'container';
+$container = get_theme_mod( 'ikunderstrap_container_type' );
 ?>
 <?php if ( is_front_page() && is_home() ) : ?>
 <!--	--><?php //get_template_part( 'global-templates/hero' ); ?>
