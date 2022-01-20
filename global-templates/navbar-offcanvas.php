@@ -8,13 +8,14 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'ikunderstrap_container_type' );
+$container = 'container';
+//$container = get_theme_mod( 'ikunderstrap_container_type' );
 ?>
 
 <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
-		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
+		<?php esc_html_e( 'Main Navigation', 'ikunderstrap' ); ?>
 	</h2>
 
 
@@ -40,7 +41,7 @@ $container = get_theme_mod( 'ikunderstrap_container_type' );
 		?>
 		<!-- end custom logo -->
 
-		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'ikunderstrap' ); ?>">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 

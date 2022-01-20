@@ -10,9 +10,8 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-//$bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
-$navbar_type       = get_theme_mod( 'ikunderstrap_navbar_type', 'collapse' );
-//var_dump($navbar_type);die();
+$navbar_type= 'collapse';
+//$navbar_type       = get_theme_mod( 'ikunderstrap_navbar_type', 'collapse' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -23,7 +22,7 @@ $navbar_type       = get_theme_mod( 'ikunderstrap_navbar_type', 'collapse' );
 	<?php wp_head(); ?>
 </head>
 
-<body <?php  //body_class(); ?> <?php //understrap_body_attributes(); ?>>
+<body <?php  body_class(); ?> <?php //understrap_body_attributes(); ?>>
 <body <?php body_class(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">

@@ -10,7 +10,8 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'ikunderstrap_container_type' );
+$container = 'container';
+//$container = get_theme_mod( 'ikunderstrap_container_type' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
