@@ -2,3 +2,11 @@
 .test {
   color: tomato;
 }
+.navbar-brand {
+  padding-left: 0;
+}
+#wrapper-footer {
+  background-color: $primary;
+  color: rgba(#ffffff, 0.9);
+  padding: 1rem 0;
+}
