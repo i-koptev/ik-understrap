@@ -23,7 +23,6 @@ $navbar_type= 'collapse';
 </head>
 
 <body <?php  body_class(); ?> <?php //understrap_body_attributes(); ?>>
-<body <?php body_class(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
