@@ -10,7 +10,8 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$navbar_type= 'collapse';
+$navbar_type= 'collapse-fixed';
+//$navbar_type= 'collapse';
 //$navbar_type       = get_theme_mod( 'ikunderstrap_navbar_type', 'collapse' );
 ?>
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ $navbar_type= 'collapse';
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar">
+	<header id="wrapper-navbar" class="fixed-top">
 
 		<a class="skip-link sr-only sr-only-focusable"
 		   href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
