@@ -1,12 +1,53 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+@import "./general";
+@import "./sections/navbar";
+@import "./sections/hero";
+
+
+
 .test {
   color: tomato;
 }
+
 .navbar-brand {
   padding-left: 0;
 }
+
 #wrapper-footer {
   background-color: $primary;
   color: rgba(#ffffff, 0.9);
   padding: 1rem 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+
+  span {
+	transition: all 0.5s ease;
+	margin-left: 1rem;
+	color: rgba(#fafafa, 0.6);
+  }
+
+  svg {
+	transition: all 0.5s ease;
+	fill: rgba(#fafafa, 0.6);
+	height: 36px;
+	width: 36px;
+  }
+
+  &:hover {
+	span {
+	  color: rgba(#fafafa, 0.9);
+	}
+	svg {
+	  fill: rgba(#fafafa, 0.9);
+	  transform: rotate(90deg);
+	}
+  }
+
 }
