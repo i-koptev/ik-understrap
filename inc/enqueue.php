@@ -28,8 +28,8 @@ if ( ! function_exists( 'ikunderstrap_scripts' ) ) {
 //		wp_enqueue_script( 'jquery' );
 
 		$js_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_scripts );
-		wp_enqueue_script( 'ikunderstrap-scripts', get_template_directory_uri() . $theme_scripts, array(), $js_version, true );
-
+		wp_enqueue_script( 'glightbox', get_template_directory_uri() . '/js/glightbox.min.js', array(), $js_version, true );
+		wp_enqueue_script( 'ikunderstrap-scripts', get_template_directory_uri() . $theme_scripts, array('glightbox'), $js_version, true );
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
