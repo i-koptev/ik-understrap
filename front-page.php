@@ -27,7 +27,7 @@ $container = 'container';
 							<span>Watch Video</span></a>
 					</div>
 				</div>
-				<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+				<div class="col-lg-6 order-1 order-lg-2 hero-img d-block d-md-none d-lg-block"  data-aos="zoom-in" data-aos-delay="200">
 					<img src="<?php echo get_template_directory_uri() . '/img/hero-img.png' ?>"
 						 class="img-fluid animated" alt="">
 				</div>
