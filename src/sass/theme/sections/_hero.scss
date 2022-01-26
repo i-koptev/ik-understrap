@@ -45,34 +45,36 @@
   font-size: 16px;
   display: flex;
   align-items: center;
-  transition: 0.5s;
+  //transition: 0.5s;
   margin: 10px 0 0 25px;
-  color: #fff;
+  color: $hero-watch-video-text-color;
   line-height: 1;
-}
 
-//#hero .btn-watch-video i {
-#hero .btn-watch-video svg {
-  height: 32px;
-  width: 32px;
-  line-height: 0;
-  color: #fff;
-  font-size: 32px;
-  transition: 0.3s;
-  margin-right: 8px;
-}
-
-#hero .btn-watch-video {
-  a {
-	text-decoration: none!important;
+  span {
+	transition: all 0.5s;
   }
+
+  svg {
+	height: 32px;
+	width: 32px;
+	line-height: 0;
+	color: $hero-watch-video-icon-color;
+	font-size: 32px;
+	transition: 0.3s;
+	margin-right: 8px;
+  }
+
+  a {
+	text-decoration: none !important;
+  }
+
   &:hover {
 	svg {
-	  fill: #47b2e4;
+	  fill: $hero-watch-video-icon-hover-color;
 	}
 
 	span {
-	  color: #47b2e4;
+	  color: $hero-watch-video-text-hover-color;
 	}
   }
 }
