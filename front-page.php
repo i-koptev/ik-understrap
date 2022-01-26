@@ -13,6 +13,7 @@ $container = 'container';
 
 		<main class="site-main" id="main">
 			<?php get_template_part( 'global-templates/section-clients' ); ?>
+			<?php get_template_part( 'global-templates/section-about-us' ); ?>
 		</main><!-- #main -->
 
 
